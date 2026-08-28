@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Stack Studio | Portfolio</title>
+    <meta
+      name="description"
+      content="A modern editorial portfolio for full-stack, database-driven web experiences with project filtering, hover reveals, and contact form validation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Aurora Stack Studio home">
+          <span class="brand-mark">A</span>
+          <span>Aurora Stack</span>
+        </a>
+        <div class="nav-links">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <p class="eyebrow">Database-first • Logic-rich • Beautifully aesthetic</p>
+        <h1>Editorial web experiences with elegant interfaces and dependable back-end thinking.</h1>
+        <p class="hero-copy">
+          I design polished portfolio-grade websites, dashboards, and product pages where the front-end feels cinematic and the architecture behind it is clean, secure, and scalable.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore projects</a>
+          <a class="button ghost" href="#contact">Start a build</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section intro-strip" aria-label="Highlights">
+        <article>
+          <strong>12+</strong>
+          <span>database-backed interfaces shipped</span>
+        </article>
+        <article>
+          <strong>5</strong>
+          <span>core stacks from Node to SQL</span>
+        </article>
+        <article>
+          <strong>100%</strong>
+          <span>responsive, accessible layouts</span>
+        </article>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Project cards that blend aesthetic visuals with database and back-end logic.</h2>
+        </div>
+
+        <div class="filter-chips" aria-label="Filter projects by category">
+          <button class="chip active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="database">Database</button>
+          <button class="chip" type="button" data-filter="backend">Back-end</button>
+          <button class="chip" type="button" data-filter="design">Design</button>
+        </div>
+
+        <div class="project-grid" aria-live="polite">
+          <article class="project-card" data-category="database backend">
+            <div class="project-art gradient-one"></div>
+            <div class="project-content">
+              <p class="project-meta">PostgreSQL • API Logic</p>
+              <h3>Inventory Intelligence</h3>
+              <p class="project-summary">A stock control platform with audit trails, relational schemas, and clean admin workflows.</p>
+            </div>
+            <div class="project-reveal">
+              <p>Hover reveal: real-time inventory rules, normalized tables, role-based access, and webhook-ready back-end services.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="design backend">
+            <div class="project-art gradient-two"></div>
+            <div class="project-content">
+              <p class="project-meta">Next UI • Auth Flows</p>
+              <h3>Velvet Client Portal</h3>
+              <p class="project-summary">A refined client dashboard for proposals, invoices, secure uploads, and message threads.</p>
+            </div>
+            <div class="project-reveal">
+              <p>Hover reveal: elegant micro-interactions paired with session logic, protected routes, and transactional email events.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="database design">
+            <div class="project-art gradient-three"></div>
+            <div class="project-content">
+              <p class="project-meta">Analytics • Data Viz</p>
+              <h3>Bloom Metrics</h3>
+              <p class="project-summary">An editorial analytics suite that turns database events into calm, readable insights.</p>
+            </div>
+            <div class="project-reveal">
+              <p>Hover reveal: chart-ready query patterns, saved report filters, and a visual system built for executive review.</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="backend database">
+            <div class="project-art gradient-four"></div>
+            <div class="project-content">
+              <p class="project-meta">Node.js • MongoDB</p>
+              <h3>Signal Commerce API</h3>
+              <p class="project-summary">A commerce service layer with product logic, cart persistence, and checkout orchestration.</p>
+            </div>
+            <div class="project-reveal">
+              <p>Hover reveal: modular controllers, validation rules, indexed collections, and graceful API error states.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>I build websites that look like a magazine spread and behave like a well-modeled system.</h2>
+        </div>
+        <p>
+          My work focuses on the meeting point of beautiful aesthetic design, database architecture, and purposeful logic. Every interface is planned around content hierarchy, motion, performance, and the back-end workflows that keep the product useful after launch.
+        </p>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Skills across the full product surface.</h2>
+        </div>
+        <div class="skill-list">
+          <span>Responsive UI Systems</span>
+          <span>Database Schema Design</span>
+          <span>REST API Architecture</span>
+          <span>Authentication Logic</span>
+          <span>Form Validation</span>
+          <span>Performance Tuning</span>
+          <span>SQL & NoSQL</span>
+          <span>Editorial Art Direction</span>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Tell me what you want your database-powered website to become.</h2>
+            <p>Use the form to outline your idea. The demo logic validates your inputs and previews a friendly success state.</p>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Project type
+              <select name="project" required>
+                <option value="">Select one</option>
+                <option>Portfolio website</option>
+                <option>Database dashboard</option>
+                <option>Back-end API</option>
+                <option>Full-stack product</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Share the goal, data needs, and timeline" required></textarea>
+            </label>
+            <button class="button primary" type="submit">Send inquiry</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="brand" href="#top"><span class="brand-mark">A</span><span>Aurora Stack</span></a>
+      <p>Modern websites, database logic, and back-end systems with an editorial finish.</p>
+      <div class="footer-links">
+        <a href="#projects">Work</a>
+        <a href="#about">Studio</a>
+        <a href="mailto:hello@example.com">hello@example.com</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
